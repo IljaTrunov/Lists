@@ -67,7 +67,23 @@ for element in number:
     number.append(abs(element))
 print(number.sort())
 print(number.sort(reverse=True))
-
+#5
+s1=['крот', 'белка', 'выхухоль']
+s2=['a', 'aa', 'aaa', 'aaaa', 'aaaaa']
+s3=['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
+ss=[s1,s2,s3]
+N=0
+while N<3:
+	print(ss[N])
+	pikkem=0
+	sN_=[]
+	for s in ss[N]:
+		pikkus=len(s)
+		if pikkus>pikkem:pikkem=pikkus	
+	for s in ss[N]:
+		sN_.append(s.ljust(pikkem,"_"))
+	print(sN_)
+	N+=1
 
 
 
